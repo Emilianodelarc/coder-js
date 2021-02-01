@@ -14,10 +14,13 @@
                 <input  id="banco" type="text" class="form-control my-2" placeholder="Ingrese su Banco">
                 <input  id="cuotas" type="number" class="form-control my-2" placeholder="ingrese cantidad de cuotas">
                 <button id="boton" class="btn btn-success" type="reset" onclick="capturar();">Calcular</button>
+                <button id="boton-remover" class="btn btn-danger" type="reset">Borrar</button>
+                <button id="boton-mostrar" class="btn btn-primary" type="reset">Última consulta</button>
+                <button id="boton-inter" class="btn btn-info" type="reset">ver intereses</button>
             </form>
             <div class="container">
                 <table class="table" id="tabla">
-                    <thead class="thead-inverse">
+                    <thead class="thead-inverse" id="cabecera">
                         <tr>
                             <th>Credito</th>
                             <th>Banco</th>
@@ -29,7 +32,9 @@
             </div>
             <p>**Señor cliente los bancos que se realizan las consultas son Santander, Macro, Provincia, Nación y Galicia</p>
         </section>
-    
+        <section class="container" id="inter-tab">
+
+        </section>
         <script src="script.js"></script>
     </body>
 </html>

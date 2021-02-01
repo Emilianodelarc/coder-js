@@ -23,7 +23,7 @@ function capturar(){
 var baseDatos = [];
 function agregar(){
     baseDatos.push(nuevoCredito);
-    //console.log(baseDatos);
+    console.log(baseDatos);
     var cuotas = calcularPrestamo(bancoCapturar, creditoCapturar) / cuotaCapturar;
     
     document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoCredito.credito+'</td><td>'+nuevoCredito.banco+'</td><td>'+nuevoCredito.cuota+'</td><td>'+cuotas+'</td></tbody>';
