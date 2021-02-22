@@ -1,13 +1,3 @@
-//--------boton ver interes-----------
-boton = document.getElementById('boton-inter');
-boton.addEventListener('keypress',function capturarEnter(event) {
-    if (event.which == 13 || event.keyCode == 13) { 
-       interes();  
-    }
-});
-function interes(){
-    document.getElementById('inter-tab').innerHTML = '<table class="table"><thead class="thead-inverse"><tr><th>Banco</th><th>interes</th></tr></thead><tbody><tr><td>Santander</td><td>120%</td></tr><tr><td>Macro</td><td>130%</td></tr><tr><td>Provincia</td><td>170%</td></tr><tr><td>Nacion</td><td>150%</td></tr><tr><td>Galicia</td><td>220%</td></tr></tbody></table>'
-}
 
 //----------Validacion de input----------------
 var cred = document.getElementById("credito")
@@ -112,3 +102,16 @@ function mostrarUl (){
     document.getElementById("tabla").innerHTML += '<tbody id="cuerpo"><td>'+nuevoCredito.credito+'</td><td>'+nuevoCredito.banco+'</td><td>'+nuevoCredito.cuota+'</td><td>'+cuotas+'</td></tbody>';
    
 }
+
+
+
+$( document ).ready(function(){
+    $('#boton-inter').click(function (){
+        $.get( "https://pokeapi.co/api/v2/pokemon/ditto",
+        function(data, status){
+            console.log(data)
+            
+        }
+    );
+})
+});
